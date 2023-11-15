@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Points {
+  public static void login() { 
+    Scanner input = new Scanner(System.in);
+    
+    System.out.print("Enter number of free-throws (1 pt. each)");
+    int point1 = input.nextInt(); 
+    
+    System.out.print("Enter number of field goals (2 pts. each)");
+    int point2 = 2 * input.nextInt(); 
+    
+    System.out.print("Enter number of 3-pointers (3 pts. each)");
+    int point3 = 3 * input.nextInt();
+    
+    System.out.println("Total points: " + (point1 + point2 + point3));
+  }
+}
