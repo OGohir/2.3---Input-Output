@@ -1,0 +1,21 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class Payroll 
+{
+  public static void main(String[] args) throws FileNotFoundException
+   {
+        File textFile = new File("paycheque.txt");
+        Scanner input = new Scanner(textFile);
+
+        String name = input.nextLine();
+        System.out.println("Name: " + name);
+    
+        double amount = Double.parseDouble(input.nextLine());
+        System.out.println("Amount: " + amount);
+    
+        int weekNumber = Integer.parseInt(input.nextLine());
+        System.out.println("Week Number: " + weekNumber);
+   }
+}
