@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+public class Future {
+  public static void login() { 
+    Scanner input = new Scanner(System.in);
+    
+    System.out.print("What year is it? ");
+    
+    int year = input.nextInt(); 
+    System.out.println("in one year it will be " + (year + 1));
+  }
+}
